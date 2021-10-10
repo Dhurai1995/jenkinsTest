@@ -1,9 +1,14 @@
-pipeline {
+pipeline 
+{
     agent any
-    stages{
+    stages
+    {
       stage("build")
       {
-        echo 'jenkins buiilding>...'
+          steps
+          {
+              echo 'jenkins buiilding>...'
+          }
       }
     }
 }
