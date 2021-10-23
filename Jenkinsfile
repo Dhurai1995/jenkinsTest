@@ -13,10 +13,11 @@ pipeline {
 			environment {
 				testFolder = "Unit_dev"
 				def parallelWorkspace = getParallelWorkspace(pwd(),test,env)
+			}
 			steps {
 				echo "te"
 			}
 		}
 	}
 }
-}				
+				
