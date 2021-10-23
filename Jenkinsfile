@@ -1,15 +1,19 @@
-pipeline {
+pipeline 
+{
     agent none
-    stages {
-        stage('Unit Tests') {
-            environment {
+    stages 
+    {
+        stage('Unit Tests') 
+        {    
+            environment 
+            {
                 testFolder="unit_dev"
             }
-            steps {
+            steps 
+            {
                 echo 'ParallelWorkspace'
                 echo testFolder
-                }
-           }
+            }
         }
     }
 }
