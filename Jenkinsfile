@@ -1,4 +1,3 @@
-
 pipeline {
     agent none
     options {
@@ -11,11 +10,10 @@ pipeline {
             }
             environment {
                 testFolder="unit_dev"
-                def parallelWorkspace=getParalellWorkspace(pwd(),testFolder,env)
             }
             steps {
                 echo 'ParallelWorkspace'
-                echo parallelWorkspace
+                echo testFolder
                 }
            }
         }
