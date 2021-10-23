@@ -12,7 +12,7 @@ pipeline {
 		stage('Unit test') {
 			environment {
 				testFolder = "Unit_dev"
-				def parallelWorkspace = "$pwd()"+"\\"+"NO_"+"\\"+testFolder
+				def parallelWorkspace = "$pwd()"
 			}
 			steps {
 				echo "te"
