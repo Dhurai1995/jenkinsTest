@@ -49,7 +49,6 @@ pipeline {
                 testFolder="unit_dev"
              //   def parallelWorkspace=pwd()
             steps {
-                echo "testFolder"
            }
         }
     }
