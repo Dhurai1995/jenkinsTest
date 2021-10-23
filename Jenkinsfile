@@ -47,8 +47,7 @@ pipeline {
         stage('Unit Tests') {
             environment {
                 testFolder="unit_dev"
-                def parallelWorkspace=getParalellWorkspace(pwd(),testFolder,env)
-            }
+                def parallelWorkspace==pwd()
             steps {
                 echo parallelWorkspace
            }
