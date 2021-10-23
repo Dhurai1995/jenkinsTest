@@ -10,7 +10,7 @@ pipeline {
 				def parallelWorkspace = "$pwd()"
 			}
 			steps {
-				echo "te"
+				echo parallelWorkspace
 			}
 		}
 	}
